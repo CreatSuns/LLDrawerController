@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'LSJHDrawerController_Example' do
+  pod 'LSJHDrawerController', :path => '../'
+
+  target 'LSJHDrawerController_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
